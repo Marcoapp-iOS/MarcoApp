@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="GroupCategoryEntity" representedClassName="GroupCategoryEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="categoryId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="categoryTitle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="GroupEntity" representedClassName="GroupEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="groupCategoryId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="groupCoverPicture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupCreatedBy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupCreatedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="groupJoinDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupModifiedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupPrice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="groupPriceId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="groupProfilePicture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupSaveState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupTotalMembers" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isCreatedGroup" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isDeletedGroup" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isPaidGroup" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isPrivateGroup" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isUserCanJoin" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="totalPosts" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="groupMember" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GroupMembersEntity" inverseName="group" inverseEntity="GroupMembersEntity" syncable="YES"/>
+    </entity>
+    <entity name="GroupMembersEntity" representedClassName="GroupMembersEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="about" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coverPicture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="designation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="interest" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locale" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationLat" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="locationLon" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="maritalStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profilePicture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timezone" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userSocialId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zodiac" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GroupEntity" inverseName="groupMember" inverseEntity="GroupEntity" syncable="YES"/>
+    </entity>
+    <entity name="GroupPriceEntity" representedClassName="GroupPriceEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="price" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="priceId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="LoginUserEntity" representedClassName="LoginUserEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="accessToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expiresDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expiresIn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasRegistered" optional="YES" attributeType="Boolean" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="issuedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tokenType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MaritalStatusEntity" representedClassName="MaritalStatusEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="statusId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="statusTitle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserProfileEntity" representedClassName="UserProfileEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="about" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coverPicture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="designation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="interest" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isStripeCustomer" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locale" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationLat" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="locationLon" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="maritalStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profilePicture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timezone" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userSocialId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zodiac" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="GroupCategoryEntity" positionX="-72" positionY="-90" width="128" height="75"/>
+        <element name="GroupEntity" positionX="27" positionY="54" width="128" height="360"/>
+        <element name="GroupMembersEntity" positionX="-81" positionY="-90" width="128" height="390"/>
+        <element name="GroupPriceEntity" positionX="205" positionY="-30" width="128" height="75"/>
+        <element name="LoginUserEntity" positionX="88" positionY="-243" width="128" height="165"/>
+        <element name="MaritalStatusEntity" positionX="-72" positionY="-216" width="128" height="75"/>
+        <element name="UserProfileEntity" positionX="-288" positionY="-189" width="180" height="405"/>
+    </elements>
+</model>

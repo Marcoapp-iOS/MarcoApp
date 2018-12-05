@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_xl" translatesAutoresizingMaskIntoConstraints="NO" id="Itn-VU-Rzj">
+                                <rect key="frame" x="124" y="240" width="166" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="gFF-ME-zY1"/>
+                                    <constraint firstAttribute="height" constant="108" id="mcR-s7-N83"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Marco" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="rnI-qY-oUe">
+                                <rect key="frame" x="82.666666666666671" y="360.33333333333331" width="248.66666666666663" height="97.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rnI-qY-oUe" secondAttribute="height" multiplier="225:88" id="iF5-ag-Box"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create groups and get in touch with friends" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALU-bX-cUM">
+                                <rect key="frame" x="74.666666666666686" y="452" width="265" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ALU-bX-cUM" secondAttribute="height" multiplier="265:72" id="1hr-tx-chg"/>
+                                    <constraint firstAttribute="height" constant="72" id="az5-vs-fnK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="EpS-80-stV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="EpS-80-stV" secondAttribute="bottom" id="5qT-LZ-gG0"/>
+                            <constraint firstItem="Itn-VU-Rzj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-74" id="AgD-3j-Csh"/>
+                            <constraint firstItem="ALU-bX-cUM" firstAttribute="top" secondItem="rnI-qY-oUe" secondAttribute="bottom" constant="-5.5" id="Imu-FE-EmH"/>
+                            <constraint firstItem="EpS-80-stV" firstAttribute="leading" secondItem="pCc-E5-CpY" secondAttribute="leading" id="O1H-gb-hxN"/>
+                            <constraint firstItem="ALU-bX-cUM" firstAttribute="centerX" secondItem="pCc-E5-CpY" secondAttribute="centerX" id="SE5-5X-Qg4"/>
+                            <constraint firstItem="EpS-80-stV" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ZNP-0G-k7f"/>
+                            <constraint firstItem="Itn-VU-Rzj" firstAttribute="centerX" secondItem="pCc-E5-CpY" secondAttribute="centerX" id="aez-U0-6Px"/>
+                            <constraint firstItem="pCc-E5-CpY" firstAttribute="trailing" secondItem="EpS-80-stV" secondAttribute="trailing" id="psm-SE-vU2"/>
+                            <constraint firstItem="rnI-qY-oUe" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="41" id="tBr-AF-mv6"/>
+                            <constraint firstItem="rnI-qY-oUe" firstAttribute="centerX" secondItem="pCc-E5-CpY" secondAttribute="centerX" id="wnM-tT-Rdm"/>
+                            <constraint firstItem="rnI-qY-oUe" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.6" id="xD8-eY-jz0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pCc-E5-CpY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo_xl" width="335" height="220"/>
+        <image name="splash" width="750" height="1334"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_MarcoApp {
+  umbrella header "Pods-MarcoApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>864411971422-j6btdq76ut13aq9tqcpihq630r0mjdjh.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.864411971422-j6btdq76ut13aq9tqcpihq630r0mjdjh</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCJeFXIZM19EJ2DN-q7oXE0RLo9ogTViEw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>864411971422</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.greyscalelogic.marco</string>
+	<key>PROJECT_ID</key>
+	<string>marcoapp-1511593879848</string>
+	<key>STORAGE_BUCKET</key>
+	<string>marcoapp-1511593879848.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:864411971422:ios:37941816b3cdcbf8</string>
+	<key>DATABASE_URL</key>
+	<string>https://marcoapp-1511593879848.firebaseio.com</string>
+</dict>
+</plist>

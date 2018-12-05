@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Medium.ttf">
+            <string>Lato-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserDetailAnnotationView" customModule="MarcoApp" customModuleProvider="target">
+            <connections>
+                <outlet property="chatButton" destination="kvG-8a-i33" id="dMy-ut-SW5"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="xi9-bW-qfQ"/>
+                <outlet property="moreButton" destination="RhM-mk-V08" id="V74-60-bkh"/>
+                <outlet property="titleLabel" destination="fMo-So-arw" id="mj3-JJ-tlE"/>
+                <outlet property="userAvatarImageView" destination="LlT-ij-7Il" id="8Zi-FT-Vi8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_default" translatesAutoresizingMaskIntoConstraints="NO" id="LlT-ij-7Il" customClass="RoundedImageView" customModule="MarcoApp" customModuleProvider="target">
+                    <rect key="frame" x="12" y="12" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="LlT-ij-7Il" secondAttribute="height" multiplier="1:1" id="KIN-Wj-v0X"/>
+                        <constraint firstAttribute="width" constant="50" id="xCv-Cl-diL"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fMo-So-arw">
+                    <rect key="frame" x="74" y="27" width="178" height="20"/>
+                    <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvG-8a-i33">
+                    <rect key="frame" x="260" y="15" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="kvG-8a-i33" secondAttribute="height" multiplier="1:1" id="9R0-hQ-YrA"/>
+                        <constraint firstAttribute="width" constant="44" id="hSp-vI-Tqc"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                    <inset key="imageEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                    <state key="normal" image="ic_chat"/>
+                    <connections>
+                        <action selector="didChatButtonPressed:" destination="-1" eventType="touchUpInside" id="qaI-KI-ChK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhM-mk-V08">
+                    <rect key="frame" x="312" y="37" width="0.0" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="Iuq-3D-wFH"/>
+                        <constraint firstAttribute="width" secondItem="RhM-mk-V08" secondAttribute="height" multiplier="1:1" id="elO-UF-LLx"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="didMoreButtonPressed:" destination="-1" eventType="touchUpInside" id="8RE-D6-Sxg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LlT-ij-7Il" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="4nc-UM-wqQ"/>
+                <constraint firstItem="LlT-ij-7Il" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="FVj-F0-nhc"/>
+                <constraint firstItem="kvG-8a-i33" firstAttribute="leading" secondItem="fMo-So-arw" secondAttribute="trailing" constant="8" id="LxT-2Y-nIS"/>
+                <constraint firstItem="fMo-So-arw" firstAttribute="leading" secondItem="LlT-ij-7Il" secondAttribute="trailing" constant="12" id="T89-8h-oNp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RhM-mk-V08" secondAttribute="trailing" constant="8" id="h9Y-OV-6NN"/>
+                <constraint firstItem="kvG-8a-i33" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="mJj-yh-QFu"/>
+                <constraint firstItem="RhM-mk-V08" firstAttribute="leading" secondItem="kvG-8a-i33" secondAttribute="trailing" constant="8" id="utj-ne-1K6"/>
+                <constraint firstItem="fMo-So-arw" firstAttribute="centerY" secondItem="LlT-ij-7Il" secondAttribute="centerY" id="vZb-cO-RA3"/>
+                <constraint firstItem="RhM-mk-V08" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="wYb-i8-64H"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="61.600000000000001" y="100.74962518740631"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_chat" width="32" height="32"/>
+        <image name="user_default" width="147" height="147"/>
+    </resources>
+</document>
